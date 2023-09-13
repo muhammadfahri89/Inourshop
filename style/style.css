@@ -1,0 +1,329 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'robot', sans-Serif;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: #d6d5d7;
+	height: 100rem;
+}
+
+li {
+	list-style-type: none;
+}
+
+nav{
+	width: 100%;
+	top: 0;
+	position: fixed;
+	z-index: 100;
+}
+
+.navwrapper {
+    height: 60px;
+	/* border: 1px solid; */
+    /* box-shadow: 0px 1px 3px;s */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    /* background-color: #e9e9e9; */
+}
+
+.lupy {
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 5px;
+	font-weight: bold;
+
+}
+
+.lupy span {
+    color: crimson;
+}
+
+.navbar {
+	display: flex;
+}
+
+.navbar li {
+	list-style-type: none;
+    margin-right: 15px;
+}
+
+.navbar li a {
+	color: rgb(87, 88, 87);
+	text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar li a:hover {
+    color: crimson;
+    transition: .5s;
+}
+
+.arc {
+	width: 100%;
+	height: 500px;
+	/* background-color: white; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tulisan {
+	width: 200px;
+	height: 150px;
+	margin-left: 100px;
+	margin-top: 50px;
+	/* background-color: aqua; */
+}
+
+.arc img {
+	width: 300px;
+}
+
+.kursig {
+	/* width: 290px; */
+	/* border-radius: 100%; */
+	border-top-left-radius: 100%;
+	background-color: #f3f0f2;
+	padding-bottom: 10px;
+}
+
+.kursig:hover .kusri{
+	transform: scale(1.2,1.2);
+	transition: 1s;
+}
+
+.buttonc {
+	display: flex;
+}
+
+.contactus {
+	margin-top: 5px;
+	width: 90px;
+	padding: 7px;
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 5px;
+	margin-left: 5px;
+}
+
+.contactus > a {
+	color: rgb(95, 81, 81);
+	text-decoration: none;
+}
+
+.hero{
+	width: 100%;
+	/* height: 5000px; */
+	/* padding-bottom: 230px; */
+    /* padding-bottom: 80px; */
+	background-color: rgb(233, 230, 230);
+}
+
+.ceramah1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.s1 {
+	text-align: center;
+	width: 190px;
+}
+
+.s1 h2{
+	color: crimson;
+	font-weight: bold;
+	margin-left: 50px;
+	margin-top: 15px;
+}
+
+.icons {
+	width: 250px;
+	/* background-color: aqua; */
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	border: 1px solid white;
+	box-shadow: 1px 1px 1px;
+	border-radius: 3px;
+	padding-bottom: 5px;
+}
+
+.icons li{
+	margin-top: 10px;
+}
+
+.icons img {
+	width: 60px;
+	animation-name: icon;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+.icons2 {
+	width: 250px;
+	border: 1px solid white;
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px;
+	margin-left: 50px;
+
+}
+
+.icons2 li a{
+	margin-left: 20px;
+	text-decoration: none;
+} 
+
+.icons2 img {
+	width: 40px;
+	margin-top: 10px;
+}
+
+.s2 h2 {
+	color: rgb(253, 244, 246);
+	font-weight: bold;
+	margin-left: 140px;
+	margin-top: 15px;
+	text-shadow: 1px 1px black;
+}
+
+.barang {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.barang li a img {
+	width: 180px;
+	height: 200px;
+}
+
+.containbarang {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.card {
+	width: 182px;
+	height: 320px;
+	margin-left: 20px;
+	margin-top: 7px;
+}
+
+.card-body {
+	height: 100px;
+}
+
+.card img {
+	width: 180px;
+	height: 170px;
+}
+
+.lupyshop h1{
+	font-size: 23px;
+}
+
+.lupyshop h1 > span {
+	color: crimson;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.idk1,
+.idk2,
+.idk3{
+	text-align: center;
+}
+
+@keyframes icon {
+	0% {
+		transform: rotate(10deg);
+	}
+	/* 50% {
+		transform: rotate(10deg);
+	} */
+	70% {
+		transform: rotate(-15deg);
+	}
+	100% {
+		transform: rotate(15deg);
+	}
+}
+
+/* HP */
+@media (max-width: 450px) {
+	html {
+		font-size: 55%;
+	}
+
+     .arc {
+		height: 380px;
+	 }
+
+     .arc img{
+        width: 180px
+	 }
+
+	 .tulisan {
+		font-size: 15px;
+		width: 120px;
+		margin-left: 30px;
+	 }
+
+	.navwrapper {
+		width: 100%;
+		font-size: 20px;
+	}
+
+    .icons img {
+		width: 40px;
+	}
+
+    .icons {
+		width: 150px;
+		position: relative;
+		left: 15px;
+	}
+
+    .s1 h2 {
+		margin-left: 20px;
+	}
+
+    .s2 h2 {
+		position: relative;
+		right: 50px;
+	}
+
+	.icons2 {
+	    position: relative;
+		width: 150px;
+        right: 15px;
+	}
+
+	.card {
+		width: 150px;
+		height: 240px;
+	}
+	.card img{
+		width: 150.2px;
+		height: 150px;
+	}
+	.hero {
+	    /* padding-bottom: 200px; */
+	}
+}
